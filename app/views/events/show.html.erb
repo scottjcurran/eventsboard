@@ -11,3 +11,7 @@
 
   <p> <%= @event.location %> </p>
 </div>
+
+<%= link_to "Edit Event", edit_event_path(@event) %>
+
+<%= link_to "Delete Event", event_path(@event), method: :delete, data: {confirm: "Are you Sure?"} %>
